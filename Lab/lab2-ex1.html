@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<style>
+		input
+		{
+			margin:  5px;
+		}
+	</style>
+</head>
+<body>
+	<form action="lab2-ex1.php" method="post" enctype="multipart/form-data">
+		
+		Your name<input type="text" name="uname"> Password<input type="password" name="password"><br>
+		Class <input type="text" name="class"> University<input type="text" name="university"><br>
+		Birthday <input type="date" name="birthday">
+		Age<input type="number" name="age"><br>
+		Email<input type="email" name="email">
+		Phone<input type="tel" name="phone"><br>
+		
+
+		Favourite tech <br>
+		<input type="radio" name="tech" value="C#">C#	
+		<input type="radio" name="tech" value="Python">Python	
+		<input type="radio" name="tech" value="Ruby">Ruby	
+		<input type="radio" name="tech" value="Java">Java
+		<br>
+		Favourite blog<input type="url" name="web"><br>
+		Favourite color <input type="color" name="color"><br>
+		
+		
+		Hidden<input type="hidden" value="Hello World" name="hidden"><br>
+		
+
+		Level for the course<input type="range" name="level" min="0" max="10" list="ulevel" >
+		<datalist id="ulevel">
+			<option value="0" ></option>
+			<option value="1" ></option>
+			<option value="2" ></option>
+			<option value="3" ></option>
+			<option value="4" ></option>
+			<option value="5" ></option>
+			<option value="6" ></option>
+			<option value="7" ></option>
+			<option value="8" ></option>
+			<option value="9" ></option>
+			<option value="10" ></option>
+		</datalist>
+		<br>
+		Language you learned <br>
+		<input type="checkbox" value="C" name="C">C
+		<input type="checkbox" value="SQL" name="SQL">SQL
+		<input type="checkbox" value="HTML" name="HTML">HTML
+		<input type="checkbox" value="Java" name="Java">Java
+		<input type="checkbox" value="C#" name="C#">C#
+		<input type="checkbox" value="Javascript" name="Javascript">Javascript
+		<input type="checkbox" value="PHP" name="PHP">PHP
+		<br>
+
+		Time<input type="time" name="time"><br>
+		You are uing OS 	
+		<select name="os" id="os">
+			<option value="Linux">Linux</option>
+			<option value="Windows">Windows</option>
+			<option value="MacOS">Mac</option>
+		</select>
+
+		<br>
+		<input type="reset"><input type="submit"><br>
+	</form>
+</body>
+</html>
